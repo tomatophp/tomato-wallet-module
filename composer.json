@@ -49,7 +49,7 @@
         "tomatophp/tomato-crm-module": "^1.0",
         "tomatophp/tomato-locations-module": "^1.0",
         "bavix/laravel-wallet": "^10.0",
-        "nesbot/carbon": "^2.70",
+        "nesbot/carbon": "^3.0",
         "guzzlehttp/guzzle": "^7.8",
         "ramsey/uuid": "^4.7"
     },
