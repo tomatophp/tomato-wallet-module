@@ -58,7 +58,7 @@ class PaymentLogTable extends AbstractTable
             ->bulkAction(
                 label: trans('tomato-admin::global.crud.delete'),
                 each: fn (\Modules\TomatoWallet\App\Models\PaymentLog $model) => $model->delete(),
-                after: fn () => Toast::danger(__('PaymentLog Has Been Deleted'))->autoDismiss(2),
+                after: fn () => Toast::danger(__('Payment Log Has Been Deleted'))->autoDismiss(2),
                 confirm: true
             )
             ->defaultSort('id', 'desc')

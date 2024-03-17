@@ -65,7 +65,7 @@ class TransferController extends Controller
             request: $request,
             model: Transfer::class,
             validation: [
-                            'deposit_id' => 'required|exists:transactions,id',
+            'deposit_id' => 'required|exists:transactions,id',
             'withdraw_id' => 'required|exists:transactions,id',
             'from_type' => 'required|max:255|string',
             'from_id' => 'required',
@@ -77,7 +77,7 @@ class TransferController extends Controller
             'fee' => 'required',
             'uuid' => 'required|max:36|string'
             ],
-            message: __('Transfer updated successfully'),
+            message: __('Transfer created successfully'),
             redirect: 'admin.transfers.index',
         );
 
@@ -123,7 +123,7 @@ class TransferController extends Controller
             request: $request,
             model: $model,
             validation: [
-                            'deposit_id' => 'sometimes|exists:transactions,id',
+            'deposit_id' => 'sometimes|exists:transactions,id',
             'withdraw_id' => 'sometimes|exists:transactions,id',
             'from_type' => 'sometimes|max:255|string',
             'from_id' => 'sometimes',

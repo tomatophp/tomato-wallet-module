@@ -1,4 +1,4 @@
-<x-tomato-admin-container label="{{trans('tomato-admin::global.crud.view')}} {{__('payment-logs')}} #{{$model->id}}">
+<x-tomato-admin-container label="{{trans('tomato-admin::global.crud.view')}} {{__('Payment Logs')}} #{{$model->id}}">
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-4">
         
           <x-tomato-admin-row :label="__('Status')" :value="$model->status" type="bool" />

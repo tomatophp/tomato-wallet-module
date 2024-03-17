@@ -64,7 +64,7 @@ class PaymentStatusController extends Controller
             request: $request,
             model: \Modules\TomatoWallet\App\Models\PaymentStatus::class,
             validation: [
-                            'name' => 'required',
+            'name' => 'required',
             'description' => 'nullable',
             'color' => 'nullable|max:255',
             'icon' => 'nullable|max:255'
@@ -115,12 +115,12 @@ class PaymentStatusController extends Controller
             request: $request,
             model: $model,
             validation: [
-                            'name' => 'sometimes',
+            'name' => 'sometimes',
             'description' => 'nullable',
             'color' => 'nullable|max:255',
             'icon' => 'nullable|max:255'
             ],
-            message: __('PaymentStatus updated successfully'),
+            message: __('Payment Status updated successfully'),
             redirect: 'admin.payment-status.index',
         );
 
@@ -139,7 +139,7 @@ class PaymentStatusController extends Controller
     {
         $response = Tomato::destroy(
             model: $model,
-            message: __('PaymentStatus deleted successfully'),
+            message: __('Payment Status deleted successfully'),
             redirect: 'admin.payment-status.index',
         );
 

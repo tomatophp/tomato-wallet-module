@@ -58,7 +58,7 @@ class PaymentStatusTable extends AbstractTable
             ->bulkAction(
                 label: trans('tomato-admin::global.crud.delete'),
                 each: fn (\Modules\TomatoWallet\App\Models\PaymentStatus $model) => $model->delete(),
-                after: fn () => Toast::danger(__('PaymentStatus Has Been Deleted'))->autoDismiss(2),
+                after: fn () => Toast::danger(__('Payment Status Has Been Deleted'))->autoDismiss(2),
                 confirm: true
             )
             ->defaultSort('id', 'desc')
